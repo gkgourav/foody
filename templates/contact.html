@@ -1,0 +1,227 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/res.css' %}">
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+    <title>CONTACT</title>
+</head>
+<body>
+
+<header>
+
+    <div class="top-head">
+        
+        <div class="burger">
+            <span class="lines" onclick="open_nav()"> &#9776 </span>
+        </div>
+        <div class="main-name">
+            <img src="{% static 'img/Logo_Streetfoodies.png' %}" alt="">
+        </div>
+
+    </div>
+
+</header>
+
+<div class="side-nav" id="SideNav">
+
+    <a href="javascript:void(0)" class="close-btn" onclick="close_nav()">
+        &times;
+    </a>
+    
+    <ul>
+        <li><i class="fa fa-home" aria-hidden="true"></i><a href="../"> &nbsp;HOME</a></li>
+        <li onclick="show_ven()"><i class="fa fa-user " aria-hidden="true"></i> &nbsp;VENDOR</li>
+            <ul id="ven" style="display: none;">
+                <li><i class="fa fa-sign-in" aria-hidden="true"></i><a href="vendor"> &nbsp; Log In</a></li>
+                <li><i class="fa fa-handshake-o" aria-hidden="true"></i> &nbsp; Sign Up</li>
+            </ul>
+        <li onclick="show_user()"><i class="fa fa-users" aria-hidden="true"></i> &nbsp;USERS </li>
+            <ul id="user" style="display: none;">
+                <li><i class="fa fa-sign-in" aria-hidden="true"></i><a href="appuser"> &nbsp; Log In</a></li>
+                <li><i class="fa fa-handshake-o" aria-hidden="true"></i> &nbsp; Sign Up</li>
+            </ul>
+        <li><i class="fa fa-rss" aria-hidden="true"></i><a href="blog" accesskey="3" title=""> &nbsp; Blogs</a></li>
+        <li><i class="fa fa-info-circle" aria-hidden="true"></i><a href="about" accesskey="4" title=""> &nbsp; About Us</a></li>
+        <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="contact" accesskey="5" title=""> &nbsp; Contact Us</a></li>
+    </ul>
+
+    <div class="social-m">
+        <ul>
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
+
+</div>
+
+
+
+<section>
+
+    <div class="contact">
+        <img src="{% static 'img/cooking-street-smoke-food.jpg' %}" alt="">
+        <div class="contact1">
+            <i class="fa fa-envelope fa-5x contact-logo" aria-hidden="true"></i>
+        <form class="contact-f" action ="query" method ="POST">
+        {% csrf_token %}
+            <input name="name" type="text" class="form-name" placeholder="Your Name" required>
+            <br>
+            <input name="email" type="email" class="form-name" placeholder="Your Email" required>
+            <br>
+
+            <textarea name="message" class="form-message" id="" cols="10" rows="10" placeholder="Message" required></textarea>
+            <br>
+
+            <input type="submit" class="form-btn" value="SEND">
+
+        </form>
+        </div>
+    </div>
+
+
+</section>
+
+
+
+
+
+<!--footer-->
+
+<footer>
+
+    <div class="foot1">
+
+        <div class="foot3">
+            <h1>Comming soon</h1>
+            <ul>
+                <li>one</li>
+                <li>two</li>
+                <li>three</li>
+                <li>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-whatsapp whatsapp" aria-hidden="true"></i></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="foot4">
+            <h2>Comming soon</h2>
+            <ul>
+                <li>one</li>
+                <li>two</li>
+                <li>three</li>
+            </ul>
+        </div>
+
+        <div class="foot4">
+            <h2>Comming soon</h2>
+            <ul>
+                <li>one</li>
+                <li>two</li>
+                <li>three</li>
+            </ul>
+        </div>
+
+
+    </div>
+
+    <div class="foot2">
+        <p>&copy; All Rights Reserved. Design By Street Foodies &reg;</p>
+    </div>
+
+
+
+</footer>
+
+
+<script>
+/*
+
+    function show_ven(){
+        var click = document.getElementById("ven");
+        if(click.style.display ==="none"){
+            click.style.display = "block"
+        }
+        else{
+            click.style.display = "none"
+        }
+    }
+
+    function show_user(){
+        var click = document.getElementById("user");
+        if(click.style.display ==="none"){
+            click.style.display = "block"
+        }
+        else{
+            click.style.display = "none"
+        }
+    }
+*/
+
+    function show_ven(){
+        var click = document.getElementById("ven");
+        var click1 = document.getElementById("user");
+        if(click.style.display ==="none"){
+            click.style.display = "block"
+            click1.style.display ="none"
+        }
+        else{
+            click.style.display = "none"
+        }
+
+    }
+
+    function show_user(){
+        var click = document.getElementById("ven");
+        var click1 = document.getElementById("user");
+        if(click1.style.display ==="none"){
+            click1.style.display = "block"
+            click.style.display ="none"
+        }
+        else{
+            click1.style.display = "none"
+        }
+
+    }
+
+</script>
+
+
+
+
+
+<script>
+
+    const open_nav = () => {
+        document.getElementById('SideNav').style.width = "250px"
+    }
+    
+    const close_nav = () => {
+        document.getElementById('SideNav').style.width = "0"
+    }
+    
+    
+    </script>
+    
+    <script>
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 300);
+        })
+    
+    </script>
+        
+    </body>
+    </html>

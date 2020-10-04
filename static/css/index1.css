@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=David+Libre&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'David Libre', serif;
+}
+
+.form1{
+    width: 100%;
+}
+
+.destination_image img{
+    height: 200px;
+    width: 250px;
+}
+@media only screen and (max-width: 1500px){
+
+    .destination_image img{
+        height: 200px;
+        width: 250px;
+        border-radius: 20px 0 0 20px;
+        border-right: double;
+    }
+
+    .btn-visit {
+        background: transparent;
+        width: 80px;
+        height: 25px;
+        outline: 0;
+        border-radius: 20px;
+        cursor: grab;
+    }
+
+    .destination{
+        display: flex;
+        background: border-box;
+        border: 1px solid gray;
+        border-radius: 20px;
+        margin: 20px;
+        box-shadow: 6px 5px grey;
+    }
+    .destination_desc{
+        margin: 10px 0 0 20px;
+        line-height: 26px;
+        font-size: 20px;
+    }
+
+    .destination_title a{
+        color: black;
+        text-decoration: none;
+        font-size: 35px;
+        text-transform: capitalize;
+        font-weight: 600;
+    }
+
+}
+
+@media only screen and (max-width: 500px){
+
+    .destination_image img{
+        height: 100px;
+        width: 150px;
+        border-radius: 20px 0 0 20px;
+        border-right: double;
+    }
+
+    .form1 {
+        width: 90%;
+        margin-left: 30%;
+    }
+
+    .btn-visit {
+        background: transparent;
+        width: 70px;
+        height: 20px;
+        outline: 0;
+        border-radius: 20px;
+        cursor: grab;
+    }
+
+    .destination{
+        display: flex;
+        background: border-box;
+        border: 1px solid gray;
+        border-radius: 20px;
+        margin: 20px;
+        box-shadow: 6px 5px grey;
+    }
+    .destination_desc{
+        margin: 2px 0 0 20px;
+        line-height: 15px;
+        font-size: 13px;
+    }
+
+    .destination_title a{
+        color: black;
+        text-decoration: none;
+        font-size: 20px;
+        text-transform: capitalize;
+        font-weight: 600;
+    }
+
+}

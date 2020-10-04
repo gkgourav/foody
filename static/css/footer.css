@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.foot2{
+    text-align: center;
+    background-color: wheat;
+    color: white;
+    height: 30px;
+    padding-top: 7px;
+}
+.foot2 p{
+    text-shadow: 2px 2px 2px gray;
+}
+.foot1{
+    display: flex;
+    width: 100%;
+    padding-top: 40px;
+    padding-left: 100px;
+    padding-right: 70px;
+    padding-bottom: 20px;
+}
+.foot1 ul li{
+    list-style: none;
+    margin-top: 25px;
+}
+.foot3{
+    width: 50%;
+    color: black;
+}
+.foot4{
+    width: 25%;
+    color: darkslategray;
+    padding-top: 10px;
+}
+.foot3 ul li ul{
+    display: flex;
+}
+.foot3 ul li ul li{
+    margin-right: 20px;
+}
+
+
+@media only screen and (max-width: 800px){
+    .foot1{
+        display: flex;
+        width: 100%;
+        padding-top: 40px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width: 520px){
+    .foot1{
+        display: block;
+    }
+}
+
+.facebook{
+    width: 20px;
+    height: 20px;
+    padding: 15% 25%;
+    color: #3b5998;
+}
+
+.facebook:hover{
+    color: white;
+    background-color: #3b5998;
+    border-radius: 50px;
+}
+.instagram{
+    width: 20px;
+    height: 20px;
+    padding: 10% 15%;
+    color: #ff5201;
+}
+
+.instagram:hover{
+    color: white;
+    background-color: #ff5201;
+    border-radius: 50px;
+}
+.twitter{
+    width: 20px;
+    height: 20px;
+    padding: 10% 15%;
+    color: #00acee;
+}
+
+.twitter:hover{
+    color: white;
+    background-color: #00acee;
+    border-radius: 50px;
+}
+.whatsapp{
+    width: 20px;
+    height: 20px;
+    padding: 10% 15%;
+    color: #128c7e;
+}
+
+.whatsapp:hover{
+    color: white;
+    background-color: #128c7e;
+    border-radius: 50px;
+}

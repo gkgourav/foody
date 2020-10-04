@@ -1,0 +1,72 @@
+.contact img{
+    width: 100%;
+    height: 100vh;
+}
+
+.contact1{
+    background: rgba(255, 255, 255, 0.9);
+    width: 70%;
+    position: absolute;
+    top: 25%;
+    margin-left: 15%;
+    border-radius: 15px;
+}
+.contact-f {
+    padding: 2% 15% 10% 15%;
+}
+
+.form-name{
+    background: rgba(17, 17, 17, 0.1);
+    border: none;
+    margin-top: 25px;
+    outline: 0;
+    width: 100%;
+    height: 40px;
+    border-radius: 6px;
+    padding-left: 10px;
+    color: black;
+}
+
+.form-message{
+    background: rgba(17, 17, 17, 0.1);
+    border: none;
+    margin-top: 25px;
+    outline: 0;
+    width: 100%;
+    height: 100px;
+    border-radius: 6px;
+    padding-left: 10px;
+    padding-top: 10px;
+    color: black;
+}
+
+.form-btn{
+    width: 100%;
+    height: 40px;
+    border: none;
+    background: rgba(160,50,50,0.5);
+    border-radius: 6px;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.contact-logo {
+    margin-left: 45%;
+    margin-top: 25px;
+}
+
+@media only screen and (max-width: 600px){
+    
+    .contact1{
+        background: rgba(255, 255, 255, 0.9);
+        width: 90%;
+        position: absolute;
+        top: 20%;
+        margin-left: 5%;
+        border-radius: 15px;
+    }
+    .contact-logo {
+        margin-left: 40%;
+        margin-top: 25px;
+    }
+}
