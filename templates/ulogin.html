@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="{% static 'css/contact.css' %}">
     <link rel="stylesheet" href="{% static 'css/footer.css' %}">
     <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <link rel="stylesheet" href="{% static 'css/ulogin.css' %}">
     <title>User LOG IN</title>
 </head>
 <body>
@@ -35,7 +36,7 @@
         &times;
     </a>
     <ul>
-        <li><i class="fa fa-home" aria-hidden="true"></i> &nbsp;HOME</li>
+        <li><i class="fa fa-home" aria-hidden="true"></i><a href="../"> &nbsp;HOME</a></li>
         <li onclick="show_ven()"><i class="fa fa-user " aria-hidden="true"></i> &nbsp;VENDOR</li>
             <ul id="ven" style="display: none;">
                 <li><i class="fa fa-sign-in" aria-hidden="true"></i><a href="vendor"> &nbsp; Log In</a></li>
@@ -44,7 +45,7 @@
         <li onclick="show_user()"><i class="fa fa-users" aria-hidden="true"></i> &nbsp;USERS </li>
             <ul id="user" style="display: none;">
                 <li><i class="fa fa-sign-in" aria-hidden="true"></i><a href="appuser"> &nbsp; Log In</a></li>
-                <li><i class="fa fa-handshake-o" aria-hidden="true"></i> &nbsp; Sign Up</li>
+                <li><i class="fa fa-handshake-o" aria-hidden="true"></i><a href="register"> &nbsp; Sign Up</a></li>
             </ul>
         <li><i class="fa fa-rss" aria-hidden="true"></i><a href="blog" accesskey="3" title=""> &nbsp; Blogs</a></li>
         <li><i class="fa fa-info-circle" aria-hidden="true"></i><a href="about" accesskey="4" title=""> &nbsp; About Us</a></li>
@@ -70,6 +71,7 @@
         <img src="{% static 'img/a019-jakubk-0835-crusty-pizza-with-salami-mushrooms-onion1.jpg' %}" alt="">
         <div class="log1">
             <i class="fa fa-user fa-5x contact-logo" aria-hidden="true"></i>
+            <h3>LogIn Your Self. Welcome...</h3>
         <form class="contact-f" method="POST" action="ulogin">
 
         {% csrf_token %}
@@ -83,8 +85,14 @@
             <input type="submit" class="form-btn" value="Login">
 
         </form>
+
+        <div class="regs">
+            <h3>Don`t Have Account? <br> Join us : <a href="register"> &nbsp; Sign Up</a></h3>
+        </div>
         </div>
     </div>
+
+    
 
 
 </section>
