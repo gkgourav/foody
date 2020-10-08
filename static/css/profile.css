@@ -86,3 +86,34 @@
     min-height: 80vh;
     margin-top: 20px;
 }
+
+.item-location{
+    text-transform: capitalize;
+    margin-top: 2%;
+    text-align: center;
+}
+
+.item-location h4{
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.item-time{
+    text-transform: capitalize;
+    margin-top: 2%;
+    text-align: center;
+}
+.item-time h4{
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.title-visit{
+    text-transform: capitalize;
+    margin-top: 2%;
+    text-align: center;
+}
+
+.title-visit h2{
+    font-size: 40px;
+}

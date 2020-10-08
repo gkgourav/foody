@@ -19,20 +19,11 @@
     color: white;
 }
 .blog2{
-    width: 100%;
-    height: 80vh;
-    background: gray;
-}
-.blog2 h2{
-    padding-top: 20%;
-    padding-left: 40%;
+    min-height: 80vh;
 }
 
 @media only screen and (max-width: 870px){
-    .blog2 h2{
-        padding-top: 30%;
-        padding-left: 35%;
-    }
+
     .blog1 img{
         width: 80%;
         height: 350px;
@@ -51,10 +42,7 @@
 }
 
 @media only screen and (max-width: 620px){
-    .blog2 h2{
-        padding-top: 30%;
-        padding-left: 30%;
-    }
+
     .blog1 img{
         width: 80%;
         height: 280px;
@@ -73,10 +61,7 @@
 }
 
 @media only screen and (max-width: 500px){
-    .blog2 h2{
-        padding-top: 65%;
-        padding-left: 20%;
-    }
+ 
     .blog1 img{
         width: 80%;
         height: 150px;
@@ -96,10 +81,7 @@
 }
 
 @media only screen and (max-width: 450px){
-    .blog2 h2{
-        padding-top: 65%;
-        padding-left: 20%;
-    }
+
     .blog1 img{
         width: 80%;
         height: 150px;
@@ -117,3 +99,56 @@
         font-size: 20px;
     }
 }
+
+.blog2{
+    margin: 2% 6%;
+}
+
+.blog{
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    /* border: 1px solid; */
+    box-shadow: 5px 5px lightsteelblue;
+    background-color: lightyellow;
+    display: block;
+}
+.blog-desc{
+    text-transform: capitalize;
+}
+.blog-img{
+    text-align: center;
+}
+.blog-img img{
+    width: 500px;
+}
+
+@media only screen and (max-width: 1050px){
+    .blog-img img{
+        width: 400px;
+    }
+}
+@media only screen and (max-width: 900px){
+    .blog-img img{
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .blog-img img{
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .blog-img img{
+        width: 150px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .blog-img img{
+        width: 100px;
+    }
+}
+

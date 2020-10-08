@@ -2,6 +2,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+<script>
+                  
+	function send_id(temp){
+// 		var x=document.getElementById(temp).textContent;
+                
+// 				//confirm(x);
+
+var url="/visit?ids="+temp;
+// 		// var x=temp;
+
+	 var req = new XMLHttpRequest();
+		req.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.write(req.responseText)
+                    
+                                                               }
+                else{
+                  document.getElementById('container').innerHTML = '<div class="loader"></div>';
+			
+                }
+                                                               
+  };
+req.open("GET", url, true);
+   req.send();
+
+
+	}
+   
+</script>
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">

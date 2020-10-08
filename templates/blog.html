@@ -73,7 +73,27 @@
 
 <section class="blog2">
 
-    <h2>Commning Soon...</h2>
+
+    {% for item in objs %}
+    
+    <div class="blog">
+
+        <div class="blog-img">
+            <img src={{item.f_img.url}} alt=""><a href="temp.html"></a></img>
+        </div>
+
+        <div class="blog-desc">
+            <p>{{item.desc}}</p>
+            <br>
+            <h4>{{item.writer}}</h4>
+        </div>
+
+
+
+    </div>
+    			
+	{% endfor %}
+
 
 </section>
 
