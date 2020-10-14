@@ -1,68 +1,248 @@
-
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title></title>
 {% load static %}
-<meta name="keywords" content="" />
-<meta name="description" content="" />
-<!-- <link href="{% static 'http://fonts.googleapis.com/css?family=Englebert|Open+Sans:400,600,700' %}" rel="stylesheet" /> -->
-<link href="{% static 'styles/about1.css' %}" rel="stylesheet" type="text/css" media="all" />
-<!--[if IE 6]>
-<link href="default_ie6.css" rel="stylesheet" type="text/css" />
-<![endif]-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/res.css' %}">
+    <link rel="stylesheet" href="{% static 'css/blogs.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+    
+    <title>About Us</title>
 </head>
 <body>
-<div class="about-section">
-    <h1>About Us</h1>
-    <p>Some text about who we are and what we do.</p>
-    <p>Resize the browser window to see that this page is responsive by the way.</p>
+
+<header>
+
+    <div class="top-head">
+        
+        <div class="burger">
+            <span class="lines" onclick="open_nav()"> &#9776 </span>
+        </div>
+        <div class="main-name">
+            <img src="{% static 'img/Logo_Streetfoodies.png' %}" alt="">
+        </div>
+
+    </div>
+
+</header>
+
+<div class="side-nav" id="SideNav">
+
+    <a href="javascript:void(0)" class="close-btn" onclick="close_nav()">
+        &times;
+    </a>
+    
+    <ul>
+        <li><i class="fa fa-home" aria-hidden="true"></i><a href="../"> &nbsp;HOME</a></li>
+        <li onclick="show_ven()"><i class="fa fa-user " aria-hidden="true"></i> &nbsp;VENDOR</li>
+            <ul id="ven" style="display: none;">
+                <li><i class="fa fa-sign-in" aria-hidden="true"></i><a href="vendor"> &nbsp; Log In</a></li>
+                <li><i class="fa fa-handshake-o" aria-hidden="true"></i> &nbsp; Sign Up</li>
+            </ul>
+        <li onclick="show_user()"><i class="fa fa-users" aria-hidden="true"></i> &nbsp;USERS </li>
+            <ul id="user" style="display: none;">
+                <li><i class="fa fa-sign-in" aria-hidden="true"></i><a href="appuser"> &nbsp; Log In</a></li>
+                <li><i class="fa fa-handshake-o" aria-hidden="true"></i><a href="register"> &nbsp; Sign Up</a></li>
+            </ul>
+        <li><i class="fa fa-rss" aria-hidden="true"></i><a href="blog" accesskey="3" title=""> &nbsp; Blogs</a></li>
+        <li><i class="fa fa-info-circle" aria-hidden="true"></i><a href="about" accesskey="4" title=""> &nbsp; About Us</a></li>
+        <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="contact" accesskey="5" title=""> &nbsp; Contact Us</a></li>
+    </ul>
+    
+    <div class="social-m">
+        <ul>
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
+
+</div>
+
+
+<section class="section11">
+
+  <div class="about1">
+
+    <div class="about-img">
+      <img src="{% static 'img/aboutc.jpg' %}" alt="">
+    </div>
+
+    <div class="abou-contain">
+      <div class="about-img1">
+        <img src="{% static 'img/about1.jpg' %}" alt="">
+      
+      <div class="about-desc">
+        <p>
+            Firstly though we should start with definitions. I.e. what it means when we say “street food”: 
+the simplest definition would be food that is sold be vendors operating along the roadside on a street.
+<br>
+Notice hygiene does not feature here.
+<br>
+While hygiene conditions are not usually great along the streets, we take care of your hygiene.
+<br>
+We will create the perfect branding for a food product using online marketing strategy. We will run a perfect campaign on a social media platform .because we have knowledge of online marketing we can easily promote a product and get traffic for it. if you want any help to promote your product we can help you. We feel happy to help you.
+<br>
+Quality of water used, <br>
+Usage of vegetables with their chopping,<br>
+Ingredients used may be fresh or old or unbranded.<br>
+Hygenic condition of utensils, cleaning staff, etc,<br>
+Quantity of raw materials used,<br><br>
+Way of presentation,
+ and the rate of the finished product.
+the procedure adopted for step by step preparations.
+Public review about the taste and quality etc….
+        </p>
+      </div>
+    </div>
+    </div>
+
   </div>
-  
-  <h2 style="text-align:center">Our Team</h2>
-  <div class="row">
-    <div class="column">
-      <div class="card">
-        <img src="{% static 'images/img01.jpg' %}" alt="Jane" style="width:100%">
-        <div class="container">
-          <h2>Jane Doe</h2>
-          <p class="title">CEO & Founder</p>
-          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-          <p>jane@example.com</p>
-          <p><button class="button">Contact</button></p>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<footer>
+
+    <div class="foot1">
+
+        <div class="foot3">
+            <h1>Comming soon</h1>
+            <ul>
+                <li>one</li>
+                <li>two</li>
+                <li>three</li>
+                <li>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-whatsapp whatsapp" aria-hidden="true"></i></a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
-      </div>
-    </div>
-  
-    <div class="column">
-      <div class="card">
-        <img src="{% static 'images/img02.jpg' %}" alt="Mike" style="width:100%">
-        <div class="container">
-          <h2>Mike Ross</h2>
-          <p class="title">Art Director</p>
-          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-          <p>mike@example.com</p>
-          <p><button class="button">Contact</button></p>
+
+        <div class="foot4">
+            <h2>Comming soon</h2>
+            <ul>
+                <li>one</li>
+                <li>two</li>
+                <li>three</li>
+            </ul>
         </div>
-      </div>
-    </div>
-  
-    <div class="column">
-      <div class="card">
-        <img src="{% static 'images/street.jpg' %}" alt="John" style="width:100%">
-        <div class="container">
-          <h2>John Doe</h2>
-          <p class="title">Designer</p>
-          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-          <p>john@example.com</p>
-          <p><button class="button">Contact</button></p>
+
+        <div class="foot4">
+            <h2>Comming soon</h2>
+            <ul>
+                <li>one</li>
+                <li>two</li>
+                <li>three</li>
+            </ul>
         </div>
-      </div>
+
+
     </div>
-  </div>
-  
-</body>
-</html>
+
+    <div class="foot2">
+        <p>&copy; All Rights Reserved. Design By Street Foodies &reg;</p>
+    </div>
+
+
+
+</footer>
+
+
+
+<script>
+/*
+
+    function show_ven(){
+        var click = document.getElementById("ven");
+        if(click.style.display ==="none"){
+            click.style.display = "block"
+        }
+        else{
+            click.style.display = "none"
+        }
+    }
+
+    function show_user(){
+        var click = document.getElementById("user");
+        if(click.style.display ==="none"){
+            click.style.display = "block"
+        }
+        else{
+            click.style.display = "none"
+        }
+    }
+*/
+
+    function show_ven(){
+        var click = document.getElementById("ven");
+        var click1 = document.getElementById("user");
+        if(click.style.display ==="none"){
+            click.style.display = "block"
+            click1.style.display ="none"
+        }
+        else{
+            click.style.display = "none"
+        }
+
+    }
+
+    function show_user(){
+        var click = document.getElementById("ven");
+        var click1 = document.getElementById("user");
+        if(click1.style.display ==="none"){
+            click1.style.display = "block"
+            click.style.display ="none"
+        }
+        else{
+            click1.style.display = "none"
+        }
+
+    }
+
+</script>
+
+
+
+
+<script>
+
+    const open_nav = () => {
+        document.getElementById('SideNav').style.width = "250px"
+    }
+    
+    const close_nav = () => {
+        document.getElementById('SideNav').style.width = "0"
+    }
+    
+    
+    </script>
+    
+    <script>
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 400);
+        })
+    
+    </script>
+        
+    </body>
+    </html>
